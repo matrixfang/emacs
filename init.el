@@ -38,6 +38,12 @@
 ;; 关闭启动帮助画面
 ;;(setq inhibit-splash-screen 1)
 
+(setq default-tab-width 4)
+
+(setq-default indent-tabs-mode nil)
+
+(setq c-basic-offset 4)
+
 ;; 关闭缩进 (第二天中被去除)
 (electric-indent-mode -1)
 
@@ -120,5 +126,5 @@
   (insert (concat "[[" filename "]]"))
   (org-display-inline-images)
   )
- 
+
 (global-set-key (kbd "C-p") 'my-screenshot)
